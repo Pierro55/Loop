@@ -26,10 +26,10 @@ c) Assembly instructions
 
 	2) Mount the feet and the mechanics cover first while laying the machine on the PSU side
 
-	3) Cut the zipties from the Z-motor cables --> unscrew the Z-axis motor mounts --> unscrew the Z-axis rod --> unscrew the Z-axis bracets and change them with the mod parts --> reverse all steps
+	3) Cut the zipties from the Z-motor cables --> unscrew the Z-axis motor mounts --> unscrew the Z-axis rod --> unscrew the Z-axis bracets and change them with 		the mod parts --> reverse all steps
 
-	4) Cut the zipties/tape from the X-gantry --> move the Z-Axis down manually roughly to Z=150mm --> unscrew all top Parts and change them with the mod parts (including the mechanism gripper)
+	4) Cut the zipties/tape from the X-gantry --> move the Z-Axis down manually roughly to Z=150mm --> unscrew all top Parts and change them with the mod parts 		(including the mechanism gripper)
 	
-	5) Mount the top belt first --> tighten the lose ends with the top screw of the mechanism gripper --> Make sure that the Belt Idler top RIGHT does not interfeer with the mechanism gripper when the gripper is on its idle position (see picture below) --> thighten the Belt Idler top RIGHT until you the belt has resonable tension
+	5) Mount the top belt first --> tighten the lose ends with the top screw of the mechanism gripper --> Make sure that the Belt Idler top RIGHT does not 		interfeer with the mechanism gripper when the gripper is on its idle position (see picture below) --> thighten the Belt Idler top RIGHT until you the belt has 		resonable tension
 	
 	6)
