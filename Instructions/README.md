@@ -1,4 +1,4 @@
-# Loop Instructtions
+# Loop Instructions
  
 #Crucial information
 
