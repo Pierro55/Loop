@@ -99,7 +99,7 @@ G92 E0 ;zero extruder
 M221 S{if layer_height<0.075}100{else}95{endif}
 ```
 
-### Copy the following Gcode to your End Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> End G-code)
+### Copy the following Gcode to your End Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> End G-code), make sure to change the release temperature according your needs
 ```
 G1 E-6 F1000 ;retract
 G4 ; wait
@@ -112,7 +112,7 @@ G1 Y212 F10000 ; move Y-axis
 {if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+5, max_print_height)}{endif} ; Move print head up
 
 ;-----Automatic ejection sequence------
-M190 R32 ; wait for bed temp !!CHANGE TO YOUR SPECIFIC RELEASE TEMPERATURE!!
+M190 R32 ; wait for bed temp !!CHANGE THIS TO YOUR SPECIFIC RELEASE TEMPERATURE!!
 G1 X245 F7000 ; move X-axis
 G1 Z210 F1500 ; raise Z-axis
 M907 Y800 X800 ; increase Y+X-motor current temporarily
