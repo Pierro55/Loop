@@ -19,6 +19,7 @@ What worked best for me:
 - Bearing block TOP ++ Z Axis Top LEFT
 - Ejection arm pivot point ++ Z Axis Bottom LEFT
 - Ejection arm endtstop ++ Z Axis Bottom RIGHT (only pre-tighten for now)
+- Ejector arm part 1 ++ Ejector arm part 2
 - Top axis ++ Bearing block TOP ++ GT2 60T 8mm pulley ++ GT2 20T 8mm as shown in the picture below (without the belts)
 
 <p align="center">
@@ -40,4 +41,9 @@ What worked best for me:
 <p align="center">
 	<img src="https://github.com/Pierro55/Loop/blob/main/Images/Idle_Position_Sledge.JPG" width=50% height=50%>
 </p>	
-6)
+
+6) Mount the ejector arm --> slide the mounted ejector arm over the GT2 20T 8mm bore pulley so that it sits where the GT2 belt would normally be located (set screws are accessible) --> Insert that into the ejection arm pivot point and slide the 8mm shaft in from the outside --> tighten the setscrews --> slide the ejector arm over the set screws of the GT2 Pulley and tighten the clamp of the arm
+
+7) Mount the ejector belt --> slide the 69cm belt thorugh the pivot point and the GT2 pulley (teeth side of the belt facing the teeth of the pulley) --> mount the GT2 belt tensioner 1+2 att each on end of the belt (orientation doesn't matter) --> lay one end around the upper pulley --> connect the two tensioners via two M3x18mm screws --> tighten the screws until the belt has reasonable tension
+
+8)
