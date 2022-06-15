@@ -1,5 +1,5 @@
 # Loop Instructions
- 
+
 ## Crucial information
 
 - Calibrate your Z-offset to get a good first layer (too close to the bed makes the prints adhere more which we don't want)
@@ -12,25 +12,32 @@
 
 What worked best for me:
 
-a) Insert all brass heat inserts (see [Heat_Inserts.pdf](https://github.com/Pierro55/Loop/blob/main/Instructions/Heat%20Insert%20Locations.pdf) for more information)
+**a)** Insert all brass heat inserts (see [Heat_Inserts.pdf](https://github.com/Pierro55/Loop/blob/main/Instructions/Heat%20Insert%20Locations.pdf) for more information)
 
-b) Mount the following parts beforehand:
-	- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
-	- Bearing block TOP ++ Z Axis Top LEFT
-	- Ejection arm pivot point ++ Z Axis Bottom LEFT
-	- Ejection arm endtstop ++ Z Axis Bottom RIGHT (only pre-tighten for now)
-	- Top axis ++ Bearing block TOP ++ GT2 60T 8mm pulley ++ GT2 20T 8mm as shown in the picture below
+**b)** Mount the following parts beforehand:
+- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
+- Bearing block TOP ++ Z Axis Top LEFT
+- Ejection arm pivot point ++ Z Axis Bottom LEFT
+- Ejection arm endtstop ++ Z Axis Bottom RIGHT (only pre-tighten for now)
+- Top axis ++ Bearing block TOP ++ GT2 60T 8mm pulley ++ GT2 20T 8mm as shown in the picture below (without the belts)
 
-c) Assembly instructions
+<p align="center">
+	<img src="https://github.com/Pierro55/Loop/blob/main/Images/Top_Left_Pulley_Assembly.JPG" width=50% height=50%>
+</p>
+
+
+**c)** Assembly instructions
 
 1) Move the Z-Axis all the way up via the LCD and fix the X-gantry with tape or zip ties to the frame
 
-2) Mount the feet and the mechanics cover first while laying the machine on the PSU side
+2) Mount the feet and the mechanics cover first while laying the machine on the PSU side, flip the machine around afterwards
 
 3) Cut the zip ties from the Z-motor cables --> unscrew the Z-axis motor mounts --> unscrew the Z-axis rod --> unscrew the Z-axis brackets and change them with 		the mod parts --> reverse all steps
 
 4) Cut the zip ties/tape from the X-gantry --> move the Z-Axis down manually roughly to Z=150mm --> unscrew all top Parts and change them with the mod parts 		(including the mechanism gripper)
 	
-5) Mount the top belt first --> tighten the loose ends with the top screw of the mechanism gripper --> Make sure that the Belt Idler top RIGHT does not 		interfere with the mechanism gripper when the gripper is on its idle position (see picture below) --> tighten the Belt Idler top RIGHT until you the belt has 	reasonable tension
-	
+5) Mount the top belt first --> tighten the loose ends with the top screw of the mechanism gripper --> Make sure that the Belt Idler top RIGHT does not 		interfere with the mechanism gripper when the gripper is on its idle position (see picture below) --> tighten the Belt Idler top RIGHT until you the belt has 	reasonable tension (**Notice: The idle position of the mechansim gripper is flat against the Z_Axis_top_RIGHT part**)
+<p align="center">
+	<img src="https://github.com/Pierro55/Loop/blob/main/Images/Idle_Position_Sledge.JPG" width=50% height=50%>
+</p>	
 6)
