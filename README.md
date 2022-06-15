@@ -12,7 +12,7 @@ You can see the first version of mechanism working in the following video:
 
 https://user-images.githubusercontent.com/57869093/173814733-19abccf8-62e7-46f5-b48e-6825817a073e.mp4
 
-
+For more detailed information feel free to check out the instruction section.
 
 ### Credits
 - Thanks to [Jonathan Kayne](https://grabcad.com/library/prusa-i3-mk3-solidworks-1) for providing the base model of the Prusa MK3
