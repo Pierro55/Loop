@@ -52,14 +52,14 @@ What worked best for me:
 
 ## Adding a printing queue
 
-For full functionallity you need a Raspberry Pi or something else that can run Octoprint. 
+For full functionality you need a Raspberry Pi or something else that can run Octoprint. 
 I suggest using a raspberry Pi zero 2W because you can install it directly onto the Prusa motherboard. 
 
 Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180)
 
-If you are using a different SBC, here are instuctions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
+If you are using a different SBC, here are instructions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
 
-Next, download the [continious print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
+Next, download the [continuous print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
 
 After these steps continue with the slicer settings and you should be good to go!
 
