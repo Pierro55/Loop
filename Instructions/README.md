@@ -59,6 +59,10 @@ Here are the instructions for installing a raspberry Pi zero 2W [Instructions RP
 
 If you are using a different SBC, here are instuctions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
 
+Next, download the [continious print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
+
+After these steps continue with the slicer settings and you should be good to go!
+
 ## Slicer Settings
 Because of the way this is buld, some build volume is lost
 - Change the buildvolume to Y-max 185mm and Z-max 194mm (Printer Settings --> General --> Bed shape for Y-setting, Max print height for Z-setting)
