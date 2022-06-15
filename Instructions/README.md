@@ -12,7 +12,7 @@
 
 What worked best for me:
 
-a) Insert all brass heat inserts (see Heat_Inserts.pdf for more information)
+a) Insert all brass heat inserts (see [Heat_Inserts.pdf](https://github.com/Pierro55/Loop/blob/main/Instructions/Heat%20Insert%20Locations.pdf) for more information)
 
 b) Mount the following parts beforehand:
 	- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
