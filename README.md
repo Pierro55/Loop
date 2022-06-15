@@ -14,7 +14,10 @@ https://user-images.githubusercontent.com/57869093/173814733-19abccf8-62e7-46f5-
 
 For more detailed information check out the instruction section.
 
+
 Feel free to join my Discord server for discussion and realtime updates: https://discord.gg/uEcjAfGHGe
+
+If you are planning to build this mod, I would really appreciate it if you could post your progress on my Discord channel :)
 
 ### Credits
 - Thanks to [Jonathan Kayne](https://grabcad.com/library/prusa-i3-mk3-solidworks-1) for providing the base model of the Prusa MK3
