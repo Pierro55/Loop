@@ -1,6 +1,6 @@
 # Loop Instructions
  
-#Crucial information
+## Crucial information
 
 - Calibrate your Z-offset to get a good first layer (too close to the bed makes the prints adhere more which we don't want)
 - Choose the right material and brand.  I've tested so far: ABS, PETG, CF-PETG, PLA. The quality from various vendors can differ, make sure to test new materials first (even if they are the same material type)
@@ -8,11 +8,11 @@
 - Use the textured PEI spring steel sheet from Prusa (depending on the batch number, you might get different results)
 - Make sure to wash your buildplate with dish soap every once in a while, and to not use any adhesives on the bed itself. 
 
-#Build instructions
+## Build instructions
 
 What worked best for me:
 
-a) Insert all brass heat inserts
+a) Insert all brass heat inserts (see Heat_Inserts.pdf for more information)
 
 b) Mount the following parts beforehand:
 	- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
