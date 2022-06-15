@@ -51,3 +51,83 @@ What worked best for me:
 8) Calibrate the system --> loose the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
 
 ## Slicer Settings
+Copy the following Gcode to your Start Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> Start G-code)
+```
+M862.3 P "[printer_model]" ; printer model check
+M862.1 P[nozzle_diameter] ; nozzle diameter check
+M115 U3.10.1 ; tell printer latest fw version
+G90 ; use absolute coordinates
+M83 ; extruder relative mode
+G28 W ; home all without mesh bed level
+G1 Z20 F1000 ;raise Z axis
+G1 Y212 F10000 ;move bed to idle position
+;M140 S[first_layer_bed_temperature] ; set bed temp
+M190 S[first_layer_bed_temperature] ; wait for bed temp
+M109 S170 ;wait for extruder temp for ABL
+G80 ; mesh bed leveling
+G1 Z15 F1000 ;raise Z axis
+M104 S[first_layer_temperature] ; set extruder temp
+M109 S[first_layer_temperature] ; wait for extruder temp
+
+;----Intro line sequence------
+G1 Z0.2 F720 ;raise Z axis
+G1 Y-3 F1000 ; go outside print area
+G92 E0 ;zero extruder
+G1 X80 F10000 ; move X-axis
+G1 E5 F1000; prime the nozzle
+G1 X180 E21 ; intro line
+G1 Z0.4 F720 ;raise Z axis
+G1 X80 E21 F1000 ; intro line
+G1 Z0.8 F720 ;raise Z axis
+G1 X180 E21 F1000 ; intro line
+G1 Z1.2 F720 ;raise Z axis
+G1 X80 E21 F1000 ; intro line
+G1 Z1.6 F720 ;raise Z axis
+G1 X180 E21 F1000 ; intro line
+G1 Z2 F720 ;raise Z axis
+G1 X80 E21 F1000 ; intro line
+G1 X70 F10000 ; quickly move away from intro line
+G1 E-0.8 ;retract
+G92 E0 ;zero extruder
+;--------------------------------------
+
+M221 S{if layer_height<0.075}100{else}95{endif}
+```
+
+Copy the following Gcode to your End Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> End G-code)
+```
+G1 E-6 F1000 ;retract
+G4 ; wait
+M221 S100 ; reset flow
+M900 K0 ; reset LA
+{if print_settings_id=~/.*(DETAIL @MK3|QUALITY @MK3|@0.25 nozzle MK3).*/}M907 E538 ; reset extruder motor current{endif}
+M104 S0 ; turn off temperature
+M107 ; turn off fan
+G1 Y212 F10000 ; move Y-axis
+{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+5, max_print_height)}{endif} ; Move print head up
+
+;-----Automatic ejection sequence------
+M190 R32 ; wait for bed temp !!CHANGE TO YOUR SPECIFIC RELEASE TEMPERATURE!!
+G1 X245 F7000 ; move X-axis
+G1 Z210 F1500 ; raise Z-axis
+M907 Y800 X800 ; increase Y+X-motor current temporarily
+G1 X210 F800 ; move X-axis
+
+; wiggle motion
+G1 Y-4 F2500 ; move Y-axis
+G1 Y210 F20000 ; move Y-axis
+G28 Z ;home Y to knock off lose objects
+G28 Z ;home Y to knock off lose objects
+G28 Z ;home Y to knock off lose objects
+G1 Y-4 ; move Y-axis
+G1 Y155 ; move Y-axis
+
+M907 Y540 X540 ;reset Y+X-motor current
+G1 X247.5 F800 ; move X-axis
+G1 Z50 F1000 ; lower Z-axis
+G1 X125 Y212 F10000 ; move X-axis
+;--------------------------------------
+
+M140 S0 ; turn off heatbed
+M84 ; disable motors
+```
