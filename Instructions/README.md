@@ -46,4 +46,8 @@ What worked best for me:
 
 7) Mount the ejector belt --> slide the 69cm belt thorugh the pivot point and the GT2 pulley (teeth side of the belt facing the teeth of the pulley) --> mount the GT2 belt tensioner 1+2 att each on end of the belt (orientation doesn't matter) --> lay one end around the upper pulley --> connect the two tensioners via two M3x18mm screws --> tighten the screws until the belt has reasonable tension
 
-8)
+8) Mount the LCD either to the left or right side of the machine
+
+8) Calibrate the system --> loose the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
+
+## Slicer Settings
