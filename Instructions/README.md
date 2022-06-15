@@ -51,7 +51,12 @@ What worked best for me:
 8) Calibrate the system --> loose the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
 
 ## Slicer Settings
-Copy the following Gcode to your Start Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> Start G-code)
+Because of the way this is buld, some build volume is lost
+- Change the buildvolume to Y-max 185mm and Z-max 194mm (Printer Settings --> General --> Bed shape for Y-setting, Max print height for Z-setting)
+
+You can still print the whole X and Y volume if you just print with a normal Prusa printer profile. Make sure to limit the Z-axis to 194mm. I suggest saving a seperate "Printer Setting" if you wish to print bigger occasinally with the mod disabled.
+
+### Copy the following Gcode to your Start Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> Start G-code)
 ```
 M862.3 P "[printer_model]" ; printer model check
 M862.1 P[nozzle_diameter] ; nozzle diameter check
@@ -94,7 +99,7 @@ G92 E0 ;zero extruder
 M221 S{if layer_height<0.075}100{else}95{endif}
 ```
 
-Copy the following Gcode to your End Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> End G-code)
+### Copy the following Gcode to your End Gcode in Prusa Slicer (Printer Settings --> Custom G-code --> End G-code)
 ```
 G1 E-6 F1000 ;retract
 G4 ; wait
