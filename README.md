@@ -6,7 +6,7 @@
 
 This is a modification for the original Prusa MK3S+ which purpose is to automate the printing process and enable continuous printing. 
 
-You can see the first version of mechanism working in the following video:
+You can see the first version of the mechanism working in the following video:
 
 
 
