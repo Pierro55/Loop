@@ -12,7 +12,7 @@ You can see the first version of the mechanism working in the following video:
 
 https://user-images.githubusercontent.com/57869093/173814733-19abccf8-62e7-46f5-b48e-6825817a073e.mp4
 
-For more detailed information feel free to check out the instruction section.
+For more detailed information check out the instruction section.
 
 Feel free to join my Discord server for discussion and realtime updates: https://discord.gg/uEcjAfGHGe
 
