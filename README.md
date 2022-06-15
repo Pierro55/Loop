@@ -14,6 +14,8 @@ https://user-images.githubusercontent.com/57869093/173814733-19abccf8-62e7-46f5-
 
 For more detailed information feel free to check out the instruction section.
 
+Feel free to join my Discord server for discussion and realtime updates: https://discord.gg/uEcjAfGHGe
+
 ### Credits
 - Thanks to [Jonathan Kayne](https://grabcad.com/library/prusa-i3-mk3-solidworks-1) for providing the base model of the Prusa MK3
 - Thanks to [smartin015](https://plugins.octoprint.org/plugins/continuousprint/) for providing the continuous print queue plugin
