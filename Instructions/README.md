@@ -7,6 +7,16 @@
 - Calibrate the first layer temperature --> lower temperatures make the part stick less to the buildplate which we want
 - Use the textured PEI spring steel sheet from Prusa (depending on the batch number, you might get different results)
 - Make sure to wash your buildplate with dish soap every once in a while, and to not use any adhesives on the bed itself. 
+- Disable crash detection mode as it will not work properly due to the tilted frame
+
+Want to test if the system works before building it?
+
+- Clean your buildplate with water and dish soap
+- Print something
+- Let it cool down to 30°C
+- If it releases easily, Loop can handle it. If not, try some of the suggestions from above. 
+
+
 
 ## Build instructions
 
