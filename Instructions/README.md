@@ -8,6 +8,7 @@
 - Use the textured PEI spring steel sheet from Prusa (depending on the batch number, you might get different results)
 - Make sure to wash your buildplate with dish soap every once in a while, and to not use any adhesives on the bed itself. 
 - Disable crash detection mode as it will not work properly due to the tilted frame
+- If you use a skirt, set the skirt height in the slicer to a minimum of 6 layers
 
 Want to test if the system works before building it?
 
