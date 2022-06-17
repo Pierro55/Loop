@@ -50,6 +50,19 @@ What worked best for me:
 
 8) Calibrate the system --> loose the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
 
+## Adding a printing queue
+
+For full functionality you need a Raspberry Pi or something else that can run Octoprint. 
+I suggest using a raspberry Pi zero 2W because you can install it directly onto the Prusa motherboard. 
+
+Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180)
+
+If you are using a different SBC, here are instructions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
+
+Next, download the [continuous print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
+
+After these steps continue with the slicer settings and you should be good to go!
+
 ## Slicer Settings
 Because of the way this is buld, some build volume is lost
 - Change the buildvolume to Y-max 185mm and Z-max 194mm (Printer Settings --> General --> Bed shape for Y-setting, Max print height for Z-setting)
