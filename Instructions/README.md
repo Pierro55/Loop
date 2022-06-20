@@ -60,11 +60,11 @@ What worked best for me:
 
 8) Mount the LCD either to the left or right side of the machine
 
-9) Mount the ejector blade (with mounted lip) --> remove the spring steel sheet --> unscrew the first row of screws, 3 in total --> use a plier to remove the spacers between the buildplate frame and heater PCB --> insert the ejector blade (make sure that the faces of the ejector blade which will be sandwiched inbetween the frame and the PCB are flat, if not sand them smooth) and align the holes with the PCB heater --> mount the screws of the PCB heater, tighten the middle one first after inserting all 3 screws --> put the spring steel sheet on top of the PCB heater
+9) Mount the ejector blade (with mounted lip) --> remove the spring steel sheet --> unscrew the first row of screws, 3 in total --> use a plier to remove the spacers between the buildplate frame and heater PCB --> insert the ejector blade (make sure that the faces of the ejector blade which will be sandwiched in between the frame and the PCB are flat, if not sand them smooth) and align the holes with the PCB heater --> mount the screws of the PCB heater, tighten the middle one first after inserting all 3 screws --> put the spring steel sheet back on top of the PCB heater
 
 10) Calibrate the system --> loosen the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
 
-11) Calibrate the ejector arm endstop --> run [Calibrate e-arm endstop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Calibrate%20e-arm%20endstop.gcode) --> after the printer beeps adjust the ejector arm endstop so that the arm is parallel to the buildplate --> tighten the screws of the ejector arm endstop --> click the encoder wheel on the LCD and let the Gcode finish
+11) Calibrate the ejector arm endstop --> run [Calibrate e-arm endstop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Calibrate%20e-arm%20endstop.gcode) --> after the printer beeps, adjust the ejector arm endstop height so that the arm is parallel to the buildplate --> tighten the screws of the ejector arm endstop --> click the encoder wheel on the LCD and let the Gcode finish
 
 To check if everything is installed and calibrated correctly please run [Demo Loop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Demo%20Loop.gcode). This will run the ejection sequence. 
 
