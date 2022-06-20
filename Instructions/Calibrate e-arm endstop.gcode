@@ -1,5 +1,5 @@
 G28 W	; home without ABL
-G1 Y212 X245 Z10 F7000 ; move Y-axis
+G1 Y212 X245 Z10 F7000 ; move axis
 G1 Z210 F1500 ; raise Z-axis
 M907 Y800 X800 ; increase Y+X-motor current temporarily
 G1 X210 F800 ; move X-axis
