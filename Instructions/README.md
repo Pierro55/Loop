@@ -151,8 +151,8 @@ G28 Z ;home Y to knock off lose objects
 G1 Y-4 ; move Y-axis
 G1 Y155 ; move Y-axis
 
-M907 Y540 X540 ;reset Y+X-motor current
 G1 X247.5 F800 ; move X-axis
+M907 Y540 X540 ;reset Y+X-motor current
 G1 Z50 F1000 ; lower Z-axis
 G1 X125 Y212 F10000 ; move X-axis
 ;--------------------------------------
