@@ -80,6 +80,7 @@ If you are using a different SBC, here are instructions on how to get Octoprint 
 Next, download the [continuous print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
 
 After these steps continue with the slicer settings and you should be good to go!
+You can add the Gcode below of the automation sequence to the continuous print queue plugin but I recommend having it in the slicer settings as seperate printer profile.
 
 ## Slicer Settings
 Because of the way this is buld, some build volume is lost
