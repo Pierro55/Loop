@@ -145,9 +145,9 @@ G1 X210 F800 ; move X-axis
 ; wiggle motion
 G1 Y-4 F2500 ; move Y-axis
 G1 Y210 F20000 ; move Y-axis
-G28 Z ;home Y to knock off lose objects
-G28 Z ;home Y to knock off lose objects
-G28 Z ;home Y to knock off lose objects
+G28 Y ;home Y to knock off lose objects
+G28 Y ;home Y to knock off lose objects
+G28 Y ;home Y to knock off lose objects
 G1 Y-4 ; move Y-axis
 G1 Y155 ; move Y-axis
 
