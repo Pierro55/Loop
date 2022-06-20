@@ -73,7 +73,7 @@ To check if everything is installed and calibrated correctly please run [Demo Lo
 For full functionality you need a Raspberry Pi or something else that can run Octoprint. 
 I suggest using a raspberry Pi zero 2W because you can install it directly onto the Prusa motherboard. 
 
-Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180)
+Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180). The instructions are for a Raspberry Pi zero but it is the same for the zero 2W.
 
 If you are using a different SBC, here are instructions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
 
