@@ -59,7 +59,11 @@ What worked best for me:
 
 8) Mount the LCD either to the left or right side of the machine
 
-8) Calibrate the system --> loose the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
+8) Calibrate the system --> loosen the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
+
+9) Calibrate the ejector arm endstop --> run [Calibrate e-arm endstop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Calibrate%20e-arm%20endstop.gcode) --> after the printer beeps adjust the ejector arm endstop so that the arm is parallel to the buildplate --> tighten the screws of the ejector arm endstop --> click the encoder wheel on the LCD and let the Gcode finish
+
+To check if everything is installed and calibrated correctly please run [Demo Loop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Demo%20Loop.gcode). This will run the ejection sequence. 
 
 ## Adding a printing queue
 
