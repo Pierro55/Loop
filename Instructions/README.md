@@ -26,7 +26,7 @@ What worked best for me:
 **a)** Insert all brass heat inserts (see [Heat_Inserts.pdf](https://github.com/Pierro55/Loop/blob/main/Instructions/Heat%20Insert%20Locations.pdf) for more information)
 
 **b)** Mount the following parts beforehand:
-- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
+- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT ++ M6 PTFE coupler
 - Bearing block TOP ++ Z Axis Top LEFT
 - Ejection arm pivot point ++ Z Axis Bottom LEFT
 - Ejection arm endtstop ++ Z Axis Bottom RIGHT (only pre-tighten for now)
