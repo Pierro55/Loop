@@ -3,12 +3,12 @@
 ## Crucial information
 
 - Calibrate your Z-offset to get a good first layer (too close to the bed makes the prints adhere more which we don't want)
-- Choose the right material and brand.  Check the . The quality from various vendors can differ, make sure to test new materials first (even if they are the same material type). Join my document on different material types --> [Material Data](https://docs.google.com/spreadsheets/d/1ghuwrelvSEJ2hHmYuEMqaSpLGjrf1bYgRo76JcQ4j_E/edit?usp=sharing)
+- Choose the right material and brand. The quality from various vendors can differ, make sure to test new materials first (even if they are the same material type). Join my document on different material types --> [Material Data](https://docs.google.com/spreadsheets/d/1ghuwrelvSEJ2hHmYuEMqaSpLGjrf1bYgRo76JcQ4j_E/edit?usp=sharing)
 - Calibrate the first layer temperature --> lower temperatures make the part stick less to the buildplate which we want
 - Use the textured PEI spring steel sheet from Prusa (depending on the batch number, you might get different results)
 - Make sure to wash your buildplate with dish soap every once in a while, and to not use any adhesives on the bed itself. 
 - Disable crash detection mode as it will not work properly due to the tilted frame
-- If you use a skirt, set the skirt height in the slicer to a minimum of 6 layers
+- If you use a skirt, set the skirt height in the slicer to a minimum of 6 layers and the skirt offset to 0,5mm
 
 Want to test if the system works before building it?
 
@@ -26,11 +26,12 @@ What worked best for me:
 **a)** Insert all brass heat inserts (see [Heat_Inserts.pdf](https://github.com/Pierro55/Loop/blob/main/Instructions/Heat%20Insert%20Locations.pdf) for more information)
 
 **b)** Mount the following parts beforehand:
-- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT
+- Belt tensioner Top RIGHT ++ Z-Axis Top RIGHT ++ M6 PTFE coupler
 - Bearing block TOP ++ Z Axis Top LEFT
 - Ejection arm pivot point ++ Z Axis Bottom LEFT
 - Ejection arm endtstop ++ Z Axis Bottom RIGHT (only pre-tighten for now)
 - Ejector arm part 1 ++ Ejector arm part 2
+- Ejector blade ++ Ejector lip
 - Top axis ++ Bearing block TOP ++ GT2 60T 8mm pulley ++ GT2 20T 8mm as shown in the picture below (without the belts)
 
 <p align="center">
@@ -46,22 +47,26 @@ What worked best for me:
 
 3) Cut the zip ties from the Z-motor cables --> unscrew the Z-axis motor mounts --> unscrew the Z-axis rod --> unscrew the Z-axis brackets and change them with 		the mod parts --> reverse all steps
 
-4) Cut the zip ties/tape from the X-gantry --> move the Z-Axis down manually roughly to Z=150mm --> unscrew all top Parts and change them with the mod parts 		(including the mechanism gripper)
+4) Cut the zip ties/tape from the X-gantry --> move the Z-Axis down manually roughly to the middle position --> unscrew all top parts and change them with the mod parts (including the mechanism gripper)
 	
-5) Mount the top belt first --> tighten the loose ends with the top screw of the mechanism gripper --> Make sure that the Belt Idler top RIGHT does not 		interfere with the mechanism gripper when the gripper is on its idle position (see picture below) --> tighten the Belt Idler top RIGHT until you the belt has 	reasonable tension (**Notice: The idle position of the mechansim gripper is flat against the Z_Axis_top_RIGHT part**)
+5) Mount the top belt first --> tighten the loose ends with the top screw of the mechanism gripper --> make sure that the Belt Idler top RIGHT does not 		interfere with the mechanism gripper when the gripper is on its idle position (see picture below) --> tighten the Belt Idler top RIGHT until the belt has 	reasonable tension (**Notice: The idle position of the mechansim gripper is flat against the Z_Axis_top_RIGHT part**)
 <p align="center">
 	<img src="https://github.com/Pierro55/Loop/blob/main/Images/Idle_Position_Sledge.JPG" width=50% height=50%>
 </p>	
 
-6) Mount the ejector arm --> slide the mounted ejector arm over the GT2 20T 8mm bore pulley so that it sits where the GT2 belt would normally be located (set screws are accessible) --> Insert that into the ejection arm pivot point and slide the 8mm shaft in from the outside --> tighten the setscrews --> slide the ejector arm over the set screws of the GT2 Pulley and tighten the clamp of the arm
+6) Mount the ejector arm --> slide the mounted ejector arm over the GT2 20T 8mm bore pulley so that it sits where the GT2 belt would normally be located (set screws are accessible) --> insert that into the ejection arm pivot point and slide the 8mm shaft in from the outside --> tighten the setscrews --> slide the ejector arm over the set screws of the GT2 Pulley and tighten the clamp of the arm
 
-7) Mount the ejector belt --> slide the 69cm belt thorugh the pivot point and the GT2 pulley (teeth side of the belt facing the teeth of the pulley) --> mount the GT2 belt tensioner 1+2 att each on end of the belt (orientation doesn't matter) --> lay one end around the upper pulley --> connect the two tensioners via two M3x18mm screws --> tighten the screws until the belt has reasonable tension
+7) Mount the vertical ejector belt --> slide the 69cm belt thorugh the pivot point and the GT2 pulley (teeth side of the belt facing the teeth of the pulley) --> mount the GT2 belt tensioner 1+2 att each on end of the belt (orientation doesn't matter) --> lay one end around the upper pulley --> connect the two tensioners via two M3x18mm screws --> tighten the screws until the belt has reasonable tension
 
 8) Mount the LCD either to the left or right side of the machine
 
-8) Calibrate the system --> loosen the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
+9) Mount the ejector blade (with mounted lip) --> remove the spring steel sheet --> unscrew the first row of screws, 3 in total --> use a plier to remove the spacers between the buildplate frame and heater PCB --> insert the ejector blade (make sure that the faces of the ejector blade which will be sandwiched in between the frame and the PCB are flat, if not sand them smooth) and align the holes with the PCB heater --> mount the screws of the PCB heater, tighten the middle one first after inserting all 3 screws --> put the spring steel sheet back on top of the PCB heater
 
-9) Calibrate the ejector arm endstop --> run [Calibrate e-arm endstop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Calibrate%20e-arm%20endstop.gcode) --> after the printer beeps adjust the ejector arm endstop so that the arm is parallel to the buildplate --> tighten the screws of the ejector arm endstop --> click the encoder wheel on the LCD and let the Gcode finish
+10) Replace the filament sensor cover with the modded version --> insert the PTFE tube into the coupler and the filament sensor cover (let roughly 30mm poke out the other end of the coupler so that filament can be inserted more easily 
+
+11) Calibrate the system --> loosen the top GT2 20T pulley --> move the ejector arm the the outermost left position (idle position) --> move the mechanism gripper to its idle position and move it back about 1-2mm --> tighten the set screws of the top pulley --> move the mechanism gripper to its idle positon by hand --> perform a Z-Axis calibration via the LCD
+
+12) Calibrate the ejector arm endstop --> run [Calibrate e-arm endstop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Calibrate%20e-arm%20endstop.gcode) --> after the printer beeps, adjust the ejector arm endstop height so that the arm is parallel to the buildplate --> tighten the screws of the ejector arm endstop --> click the encoder wheel on the LCD and let the Gcode finish
 
 To check if everything is installed and calibrated correctly please run [Demo Loop.gcode](https://github.com/Pierro55/Loop/blob/main/Instructions/Demo%20Loop.gcode). This will run the ejection sequence. 
 
@@ -70,13 +75,14 @@ To check if everything is installed and calibrated correctly please run [Demo Lo
 For full functionality you need a Raspberry Pi or something else that can run Octoprint. 
 I suggest using a raspberry Pi zero 2W because you can install it directly onto the Prusa motherboard. 
 
-Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180)
+Here are the instructions for installing a raspberry Pi zero 2W [Instructions RPI Zero](https://help.prusa3d.com/article/prusaprint-rpi-zero-and-octoprint_2180). The instructions are for a Raspberry Pi zero but it is the same for the zero 2W.
 
 If you are using a different SBC, here are instructions on how to get Octoprint running [Instructions Octoprint](https://octoprint.org/download/)
 
 Next, download the [continuous print queue plugin](https://plugins.octoprint.org/plugins/continuousprint/)
 
 After these steps continue with the slicer settings and you should be good to go!
+You can add the Gcode below of the automation sequence to the continuous print queue plugin but I recommend having it in the slicer settings as seperate printer profile.
 
 ## Slicer Settings
 Because of the way this is buld, some build volume is lost
