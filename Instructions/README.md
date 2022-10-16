@@ -85,7 +85,7 @@ After these steps continue with the slicer settings and you should be good to go
 You can add the Gcode below of the automation sequence to the continuous print queue plugin but I recommend having it in the slicer settings as seperate printer profile.
 
 ## Slicer Settings
-Because of the way this is buld, some build volume is lost
+Because of the way this modification is designed, some build volume is lost
 - Change the buildvolume to Y-max 185mm and Z-max 194mm (Printer Settings --> General --> Bed shape for Y-setting, Max print height for Z-setting)
 
 You can still print the whole X and Y volume if you just print with a normal Prusa printer profile. Make sure to limit the Z-axis to 194mm. I suggest saving a seperate "Printer Setting" if you wish to print bigger occasinally with the mod disabled.
