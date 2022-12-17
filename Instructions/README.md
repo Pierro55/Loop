@@ -1,6 +1,6 @@
 # Loop Instructions
 
-## Crucial information
+## Important information
 
 - Calibrate your Z-offset to get a good first layer (too close to the bed makes the prints adhere more which we don't want)
 - Choose the right material and brand. The quality from various vendors can differ, make sure to test new materials first (even if they are the same material type). Join my document on different material types --> [Material Data](https://docs.google.com/spreadsheets/d/1ghuwrelvSEJ2hHmYuEMqaSpLGjrf1bYgRo76JcQ4j_E/edit?usp=sharing)
