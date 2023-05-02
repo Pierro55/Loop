@@ -43,7 +43,7 @@ What worked best for me:
 
 1) Move the Z-Axis to 190mm via the LCD and fix the X-gantry with tape or zip ties to the frame
 
-2) Unscrew the LCD first while laying the machine on the PSU side, mount the mechanics cover and the feet, flip the machine around afterwards
+2) Unplug and unscrew the LCD first while laying the machine on the PSU side, mount the mechanics cover and the feet, flip the machine around afterwards
 
 3) Cut the zip ties from the Z-motor cables --> unscrew the Z-axis motor mounts --> unscrew the Z-axis rod --> unscrew the Z-axis brackets and change them with 		the mod parts --> reverse all steps
 
