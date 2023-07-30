@@ -4,7 +4,7 @@
 	<img src="https://github.com/Pierro55/Loop/blob/main/Images/Loop.jpg" width=70% height=70%>
 </p>
 
-This is a modification for the original Prusa MK3S+ which purpose is to automate the printing process and enable continuous printing. 
+With this modification for the original Prusa MK3S+ you can put your 3D printer on autopilot and enable continuous printing. 
 
 You can see the first version of the mechanism working in the following video:
 
@@ -26,4 +26,6 @@ If you are planning to build this mod, I would really appreciate it if you could
 - I got some inspiration from [3D Que](https://www.3dque.com/) which got me motivated to build an improved system
 
 
-#automation
+#automation #3dprinting #auto-3d-print #continious3dprint #3dprintautomatically
+
+Loop 3D printing automatisation now is intergratet into [SimplyPrint](https://simplyprint.io/)
