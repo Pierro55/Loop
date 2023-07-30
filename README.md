@@ -24,3 +24,6 @@ If you are planning to build this mod, I would really appreciate it if you could
 - Thanks to [smartin015](https://plugins.octoprint.org/plugins/continuousprint/) for providing the continuous print queue plugin
 - Thanks to the [Octoprint team](https://octoprint.org/download/) for providing such incredible software
 - I got some inspiration from [3D Que](https://www.3dque.com/) which got me motivated to build an improved system
+
+
+#automation
