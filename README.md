@@ -28,4 +28,4 @@ If you are planning to build this mod, I would really appreciate it if you could
 
 #automation #3dprinting #auto-3d-print #continious3dprint #3dprintautomatically
 
-Loop 3D printing automatisation now is intergratet into [SimplyPrint](https://simplyprint.io/)
+Loop 3D printing automatisation now is integrated into [SimplyPrint](https://simplyprint.io/)
