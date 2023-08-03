@@ -26,6 +26,4 @@ If you are planning to build this mod, I would really appreciate it if you could
 - I got some inspiration from [3D Que](https://www.3dque.com/) which got me motivated to build an improved system
 
 
-#automation #3dprinting #auto-3d-print #continious3dprint #3dprintautomatically
-
 Loop 3D printing automatisation now is integrated into [SimplyPrint](https://simplyprint.io/)
